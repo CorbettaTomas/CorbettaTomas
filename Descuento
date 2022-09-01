@@ -1,0 +1,4 @@
+let precio : number = 600
+let descuento : number = 0.90
+let precioTotal : number = precio*descuento
+  console.log (precioTotal)
