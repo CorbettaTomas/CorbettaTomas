@@ -1,0 +1,28 @@
+const inputFirst = document.getElementById('first');
+const inputSecond = document.getElementById('second');
+const inputThird = document.getElementById('third');
+const inputFourth = document.getElementById('fourth');
+const btn = document.querySelector("button");
+const para = document.querySelector("p");
+const totalPara = document.getElementById ('total');
+const promedioPara = document.getElementById('promedio');
+
+let first: number = 0;
+let second: number= 0;
+let third: number= 0;
+let fourth: number= 0;
+
+btn.addEventListener('click', () => {
+first = Number(inputfirst.value);
+second = Number(inputsecond.value);
+third = Number(inputthird.value);
+fourth = Number(inputfourth.value);
+
+const total:number = first + second + third + fourth;
+const prom = total / 4
+totalPara.innerText += total;
+promedioPara.innerText += prom;
+
+console.log(typeof first);
+}
+);
